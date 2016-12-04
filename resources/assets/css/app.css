@@ -17,6 +17,7 @@
  *
  * ------------------------------------------------------------------ */
 
+
 /* ----------------- 1. Base Styling ----------------- */
 
 @font-face {
@@ -32,6 +33,11 @@
 @font-face {
     font-family: "uvnnhannang";
     src: url('../fonts/UVNNhanNang_R.ttf');
+}
+
+@font-face {
+    font-family: 'sfufutura_heavy_oblique';
+    src: url('../fonts/SFUFuturaHeavyOblique.ttf');
 }
 
 * {
@@ -162,14 +168,6 @@ input[type="number"], input[type="search"], input[type="email"], input[type="tex
 
 input:focus, button:focus, textarea:focus {
     outline: none;
-}
-
-a {
-    text-decoration: none;
-    -webkit-transition: all 0.15s;
-    -moz-transition: all 0.15s;
-    transition: all 0.15s;
-    color: inherit;
 }
 
 a:hover, a:focus, a:active {
@@ -945,6 +943,7 @@ header .main-header-wrapper .site-identity {
     margin: 0;
     display: block;
 }
+
 header .main-header-wrapper .site-identity img {
     width: 100%;
 }
@@ -1050,13 +1049,13 @@ header .main-header-wrapper .main-nav ul li:last-of-type {
 }
 
 header .main-header-wrapper .main-nav ul li a:hover {
-    color: #009dff;
+    color: #FBAF3F;
 }
 
 @media (max-width: 1400px) {
     header .main-header-wrapper .main-nav ul li {
         font-size: 16px;
-        margin: 0 58px 0 0;
+        margin: 0 50px 0 0;
     }
     header .main-header-wrapper .main-nav ul li:last-of-type {
         margin: 0;
@@ -1083,6 +1082,7 @@ header .main-header-wrapper .main-nav ul li a:hover {
     }
 }
 
+
 /* ----------------- 6.2. Footer ----------------- */
 
 footer {
@@ -1108,7 +1108,7 @@ footer .breaking-news li {
     font-size: 14px;
 }
 
-footer .logo-footer img{
+footer .logo-footer img {
     width: 120px;
 }
 
@@ -1125,7 +1125,7 @@ footer .copyrights a {
     color: #d2d5d6;
 }
 
-.address-content ul{
+.address-content ul {
     display: table-cell;
 }
 
@@ -1198,6 +1198,7 @@ footer .copyrights a:hover {
         font-size: 16px;
     }
 }
+
 
 /* -------- Blog Posts -------- */
 
@@ -1889,6 +1890,7 @@ footer .copyrights a:hover {
     }
 }
 
+
 /* -------- Newsletter Block -------- */
 
 .newsletter-subscribe-block {
@@ -2000,6 +2002,7 @@ ul.page-numbers li a:hover {
     text-decoration: none;
 }
 
+
 /* -------- Side menu -------- */
 
 #page, body {
@@ -2016,6 +2019,7 @@ ul.page-numbers li a:hover {
     position: relative;
     margin-top: 30px;
 }
+
 
 /* -------- Single Post Area -------- */
 
@@ -2517,6 +2521,7 @@ ul.page-numbers li a:hover {
     line-height: 40px;
 }
 
+
 /* -------- Progress Block -------- */
 
 .progress-block {
@@ -2841,20 +2846,109 @@ ul.page-numbers li a:hover {
     }
 }
 
+
 /* -------- Breadcrumbs -------- */
 
-.breadcrumbs {
-    margin: 0 0 20px;
+#breadcrumb {
+    list-style: none;
+    display: inline-block;
 }
 
-.breadcrumbs h2 {
-    font-weight: 300;
+#breadcrumb .icon {
+    font-size: 14px;
+}
+
+#breadcrumb li {
+    float: left;
+}
+
+#breadcrumb li a {
+    color: #FFF;
+    display: block;
+    background: #99CA3C;
+    text-decoration: none;
+    position: relative;
+    height: 28px;
+    line-height: 25px;
+    padding: 0 40px 0 5px;
     text-align: center;
+    margin-right: 23px;
+    font-family: "sfufutura_heavy_oblique";
 }
 
-.breadcrumbs h2 span {
-    color: #009dff;
+#breadcrumb li:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
 }
+
+#breadcrumb li:first-child a:before {
+    border: none;
+}
+
+#breadcrumb li a:before, #breadcrumb li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #99CA3C;
+    border-width:14px 10px;
+    width: 0;
+    height: 0;
+}
+
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+
+#breadcrumb li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #99CA3C;
+}
+
+#breadcrumb li a:hover {
+    background-color: #00A79D;
+}
+
+#breadcrumb li.active a {
+    background-color: #00A79D;
+}
+
+#breadcrumb li.active a:before {
+    border-color: #00A79D;
+    border-left-color: transparent;
+}
+
+#breadcrumb li.active a:after {
+    border-left-color: #00A79D;
+}
+
+#breadcrumb li a:hover:before {
+    border-color: #00A79D;
+    border-left-color: transparent;
+}
+
+#breadcrumb li a:hover:after {
+    border-left-color: #00A79D;
+}
+
+#breadcrumb li a:active {
+    background-color: #00A79D;
+}
+
+#breadcrumb li a:active:before {
+    border-color: #00A79D;
+    border-left-color: transparent;
+}
+
+#breadcrumb li a:active:after {
+    border-left-color: #00A79D;
+}
+
+
+/* ----------CSS custom------------ */
 
 .float-left {
     float: left !important;
@@ -2862,6 +2956,10 @@ ul.page-numbers li a:hover {
 
 .float-right {
     float: right !important;
+}
+
+.clear-fix {
+    clear: both;
 }
 
 .price {
@@ -2872,6 +2970,7 @@ ul.page-numbers li a:hover {
     display: table-cell;
     vertical-align: top;
 }
+
 .content-wrapper .slider-homepage li:first-child {
     width: 42%;
 }
@@ -2900,7 +2999,7 @@ ul.page-numbers li a:hover {
     display: table-cell;
 }
 
-.content-wrapper .nav-category li a{
+.content-wrapper .nav-category li a {
     background: #99ca3c none repeat scroll 0 0;
     border-radius: 0 14px 14px 0;
     color: #fff;
@@ -2937,6 +3036,7 @@ ul.page-numbers li a:hover {
     padding: 14px 0;
     font-family: "uvnnhan";
     font-style: italic;
+    font-weight: normal;
 }
 
 .content-wrapper .box-help {
@@ -2957,4 +3057,11 @@ ul.page-numbers li a:hover {
 
 .content-wrapper .slider-library-homepage img {
     border-radius: 8px;
+}
+
+.content-wrapper .slider-active-company p {
+    font-family: "sfufutura";
+    color: #6D6E70;
+    font-size: 14px;
+    margin-top: 5px;
 }

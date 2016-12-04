@@ -18,9 +18,8 @@
         <!-- Styles -->
         @yield('before-styles')
 
-        {{ Html::style(asset('css/app.css')) }}
         {{ Html::style(asset('vendor/adminlte/') . "/bootstrap/css/bootstrap.min.css") }}
-        {{ Html::style('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')}}
+        {{ Html::style(asset('css/app.css')) }}
 
         @yield('after-styles')
 
@@ -60,12 +59,12 @@
 
                                 <nav class="main-nav">
                                     <ul class="clean-list">
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Home</a></li>
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Giới thiệu</a></li>
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Sản phẩm</a></li>
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Lịch nhập hàng</a></li>
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Công nghệ</a></li>
-                                        <li><a href="http://teslathemes.com/demo/html/dailypost/#">Liên hệ</a></li>
+                                        <li><a href="{{ route('home') }}">Trang chủ</a></li>
+                                        <li><a href="{{ route('about') }}">Giới thiệu</a></li>
+                                        <li><a href="#">Sản phẩm</a></li>
+                                        <li><a href="#">Lịch nhập hàng</a></li>
+                                        <li><a href="#">Công nghệ</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                             </div>

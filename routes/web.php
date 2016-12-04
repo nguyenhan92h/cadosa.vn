@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('frontend.index');
 })->name('home');;
+
+Route::get('/gioi-thieu', function () {
+    return view('frontend.about');
+})->name('about');;
