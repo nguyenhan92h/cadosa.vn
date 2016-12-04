@@ -151,7 +151,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -181,7 +181,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -241,7 +241,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -256,7 +256,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@
                 <div class="post-body align-center">
                     <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
 
-                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
                 </div>
             </div>
         </div>
@@ -281,18 +281,20 @@
             <li><span class="page-numbers current">1</span></li>
             <li><a class="page-numbers" href="#">2</a></li>
             <li><a class="page-numbers" href="#">3</a></li>
-            <li><span class="page-numbers dots">...</span></li>
-            <li><a class="next page-numbers" href="#">Next</a></li>
+            <li><span class="page-numbers dots">......</span></li>
+            <li><a class="next page-numbers" href="#">Tiếp</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="box-help">
+            <div class="post-simple box-help">
                 <h4 class="align-center title">Hướng dẫn mua hàng</h4>
-                <p>- Hàng ngày lúc 7h đến 8h sáng về: Lợn sạch, Lợn mán Hòa Bình  |  Thịt gà, vịt sạch Hòa Bình  |  Rau hữu cơ, rau bản địa Dì Thàng, Lào Cai  | Rau quả VietGAP |  Các loại hoa quả Việt Nam  |  Hoa quả nhập khẩu.</p>
-                <p>- 12h hàng ngày sẽ về : Cá hồi tươi được nhập khẩu từ NAUY và Sói Biển chỉ bán loại 1 có trọng lượng 6 kg trở lên.</p>
-                <p>- 10 sáng thứ 7 và chủ nhật hàng tuần : Sói Biển sẽ về rất nhiều hải sản như tôm sú, tôm gân, cá thu, cá chìa vôi, cá hố, cá chim, cá cơm, mực lá, mực trứng, mực ống...Đặc biệt vào thứ 7 và chủ nhật sẽ thường xuyên tổ chức chương trình giới thiệu sản phẩm nông nghiệp tiêu biểu trên toàn hệ thống.</p>
-                <p>- Thứ 7 và chủ nhật : Sói Biển sẽ tổ chức giã chả mực Hạ Long trực tiếp tại cửa hàng thu hút đông đảo khách hàng tại Hà Nội đến thăm quan mua thực phẩm sạch và chả mực.</p>
+                <div class="post-body">
+                    <p>- Hàng ngày lúc 7h đến 8h sáng về: Lợn sạch, Lợn mán Hòa Bình  |  Thịt gà, vịt sạch Hòa Bình  |  Rau hữu cơ, rau bản địa Dì Thàng, Lào Cai  | Rau quả VietGAP |  Các loại hoa quả Việt Nam  |  Hoa quả nhập khẩu.</p>
+                    <p>- 12h hàng ngày sẽ về : Cá hồi tươi được nhập khẩu từ NAUY và Sói Biển chỉ bán loại 1 có trọng lượng 6 kg trở lên.</p>
+                    <p>- 10 sáng thứ 7 và chủ nhật hàng tuần : Sói Biển sẽ về rất nhiều hải sản như tôm sú, tôm gân, cá thu, cá chìa vôi, cá hố, cá chim, cá cơm, mực lá, mực trứng, mực ống...Đặc biệt vào thứ 7 và chủ nhật sẽ thường xuyên tổ chức chương trình giới thiệu sản phẩm nông nghiệp tiêu biểu trên toàn hệ thống.</p>
+                    <p>- Thứ 7 và chủ nhật : Sói Biển sẽ tổ chức giã chả mực Hạ Long trực tiếp tại cửa hàng thu hút đông đảo khách hàng tại Hà Nội đến thăm quan mua thực phẩm sạch và chả mực.</p>
+                </div>
             </div>
         </div>
     </div>

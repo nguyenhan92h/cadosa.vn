@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </header>
-
+                <hr>
                 <!-- Main Content -->
                 <div class="content-wrapper">
                     @yield('content')
