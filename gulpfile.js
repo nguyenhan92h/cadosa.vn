@@ -21,13 +21,15 @@ elixir(mix => {
          * Combine pre-processed frontend CSS files
          */
         .styles([
-            'app.css'
+            'app.css',
+            'jquery.bxslider.css'
         ], 'public/css/app.css')
 
         /**
         * Combine frontend scripts
         */
         .scripts([
-            'plugins.js'
+            'plugins.js',
+            'jquery.bxslider.min.js'
         ], 'public/js/plugins.js');
 });

@@ -2,181 +2,460 @@
 
 @section('content')
     <div class="row">
-
-        <example></example>
-
-        <div class="col-xs-12">
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <i class="fa fa-home"></i> {{ trans('navs.general.home') }}
+        <div class="col-md-7">
+            <div class="post medium-post technology">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/article_slide.jpg') }}" alt="featured post cover">
+                    </a>
                 </div>
 
-                <div class="panel-body">
-                    {{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">Những khoảnh khắc ấn tượng trong chuyến thăm Việt Nam của ông Modi</a></h4>
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
                 </div>
-            </div><!-- panel -->
-
-        </div><!-- col-md-10 -->
-
-        @role('Administrator')
-            {{-- You can also send through the Role ID --}}
-
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.role') . trans('strings.frontend.tests.using_blade_extensions') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 1: ' . trans('strings.frontend.tests.you_can_see_because', ['role' => trans('roles.administrator')]) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endauth
-
-        @if (access()->hasRole('Administrator'))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.role') . trans('strings.frontend.tests.using_access_helper.role_name') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 2: ' . trans('strings.frontend.tests.you_can_see_because', ['role' => trans('roles.administrator')]) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        @if (access()->hasRole(1))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.role') . trans('strings.frontend.tests.using_access_helper.role_id') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 3: ' . trans('strings.frontend.tests.you_can_see_because', ['role' => trans('roles.administrator')]) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        @if (access()->hasRoles(['Administrator', 1]))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.role') . trans('strings.frontend.tests.using_access_helper.array_roles_not') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 4: ' . trans('strings.frontend.tests.you_can_see_because', ['role' => trans('roles.administrator')]) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        {{-- The second parameter says the user must have all the roles specified. Administrator does not have the role with an id of 2, so this will not show. --}}
-        @if (access()->hasRoles(['Administrator', 2], true))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.role') . trans('strings.frontend.tests.using_access_helper.array_roles') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.tests.you_can_see_because', ['role' => trans('roles.administrator')]) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        @permission('view-backend')
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.permission') . trans('strings.frontend.tests.using_access_helper.permission_name') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 5: ' . trans('strings.frontend.tests.you_can_see_because_permission', ['permission' => 'view-backend']) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endauth
-
-        @if (access()->hasPermission(1))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.permission') . trans('strings.frontend.tests.using_access_helper.permission_id') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 6: ' . trans('strings.frontend.tests.you_can_see_because_permission', ['permission' => 'view_backend']) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        @if (access()->hasPermissions(['view-backend', 1]))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.permission') . trans('strings.frontend.tests.using_access_helper.array_permissions_not') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.test') . ' 7: ' . trans('strings.frontend.tests.you_can_see_because_permission', ['permission' => 'view_backend']) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        @if (access()->hasPermissions(['view-backend', 2], true))
-            <div class="col-xs-12">
-
-                <div class="panel panel-default">
-                    <div class="panel-heading"><i class="fa fa-home"></i> {{ trans('strings.frontend.tests.based_on.permission') . trans('strings.frontend.tests.using_access_helper.array_permissions') }}</div>
-
-                    <div class="panel-body">
-                        {{ trans('strings.frontend.tests.you_can_see_because_permission', ['permission' => 'view_backend']) }}
-                    </div>
-                </div><!-- panel -->
-
-            </div><!-- col-md-10 -->
-        @endif
-
-        <div class="col-xs-12">
-
-            <div class="panel panel-default">
-                <div class="panel-heading"><i class="fa fa-home"></i> Bootstrap Glyphicon {{ trans('strings.frontend.test') }}</div>
-
-                <div class="panel-body">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon glyphicon-euro" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon glyphicon-cloud" aria-hidden="true"></span>
-                    <span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="slider-homepage">
+                <div class="slide">
+                    <ul>
+                        <li>
+                            <img src="{{ asset('image/articles/title_1.jpg') }}">
+                        </li>
+                        <li>
+                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
+                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
+                        </li>
+                    </ul>
                 </div>
-            </div><!-- panel -->
-
-        </div><!-- col-md-10 -->
-
-        <div class="col-xs-12">
-
-            <div class="panel panel-default">
-                <div class="panel-heading"><i class="fa fa-home"></i> Font Awesome {{ trans('strings.frontend.test') }}</div>
-
-                <div class="panel-body">
-                    <i class="fa fa-home"></i>
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-pinterest"></i>
+                <div class="slide">
+                    <ul>
+                        <li>
+                            <img src="{{ asset('image/articles/title_1.jpg') }}">
+                        </li>
+                        <li>
+                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
+                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
+                        </li>
+                    </ul>
                 </div>
-            </div><!-- panel -->
+                <div class="slide">
+                    <ul>
+                        <li>
+                            <img src="{{ asset('image/articles/title_1.jpg') }}">
+                        </li>
+                        <li>
+                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
+                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide">
+                    <ul>
+                        <li>
+                            <img src="{{ asset('image/articles/title_1.jpg') }}">
+                        </li>
+                        <li>
+                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
+                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nav-category">
+                <ul>
+                    <li><a href="">Tư vấn dinh dưỡng</a></li>
+                    <li><a href="">Thực đơn hôm nay</a></li>
+                    <li><a href="">Dược liệu tự nhiên</a></li>
+                </ul>
+            </div>
+        </div>
 
-        </div><!-- col-md-10 -->
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
 
-    </div><!--row-->
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="title-ads-homepage align-center no-margin">click ngay để trải nghiệm dịch vụ miễn phí của Cadosa</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nav-category">
+                <ul>
+                    <li><a href="">Nông sản tươi sống</a></li>
+                    <li class="no-active"><a href="">Thịt tươi sống</a></li>
+                    <li class="no-active"><a href="">Nông sản chế biến</a></li>
+                    <li class="no-active"><a href="">Nông sản chế biến</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="page-single-story.html">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <strong class="price">20.000 đ/kg</strong> - Còn hàng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <ul class="page-numbers">
+            <li><span class="page-numbers current">1</span></li>
+            <li><a class="page-numbers" href="#">2</a></li>
+            <li><a class="page-numbers" href="#">3</a></li>
+            <li><span class="page-numbers dots">...</span></li>
+            <li><a class="next page-numbers" href="#">Next</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box-help">
+                <h4 class="align-center title">Hướng dẫn mua hàng</h4>
+                <p>- Hàng ngày lúc 7h đến 8h sáng về: Lợn sạch, Lợn mán Hòa Bình  |  Thịt gà, vịt sạch Hòa Bình  |  Rau hữu cơ, rau bản địa Dì Thàng, Lào Cai  | Rau quả VietGAP |  Các loại hoa quả Việt Nam  |  Hoa quả nhập khẩu.</p>
+                <p>- 12h hàng ngày sẽ về : Cá hồi tươi được nhập khẩu từ NAUY và Sói Biển chỉ bán loại 1 có trọng lượng 6 kg trở lên.</p>
+                <p>- 10 sáng thứ 7 và chủ nhật hàng tuần : Sói Biển sẽ về rất nhiều hải sản như tôm sú, tôm gân, cá thu, cá chìa vôi, cá hố, cá chim, cá cơm, mực lá, mực trứng, mực ống...Đặc biệt vào thứ 7 và chủ nhật sẽ thường xuyên tổ chức chương trình giới thiệu sản phẩm nông nghiệp tiêu biểu trên toàn hệ thống.</p>
+                <p>- Thứ 7 và chủ nhật : Sói Biển sẽ tổ chức giã chả mực Hạ Long trực tiếp tại cửa hàng thu hút đông đảo khách hàng tại Hà Nội đến thăm quan mua thực phẩm sạch và chả mực.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nav-category">
+                <ul>
+                    <li><a href="">Công nghệ sản xuất</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nav-category">
+                <ul>
+                    <li><a href="">Hành trình của Cadosa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="page-single-story.html">
+                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body">
+                    <h4 class="post-title"><a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
+
+                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider-library-homepage">
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('image/upload/image_library.jpg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+
+@section('after-scripts')
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider-homepage').bxSlider({
+                mode: 'vertical',
+                minSlides: 3,
+                slideMargin: 10,
+                pager: false
+            });
+
+            $('.slider-library-homepage').bxSlider({
+                slideWidth: 220,
+                minSlides: 2,
+                maxSlides: 4,
+                slideMargin: 25,
+                pager: false
+            });
+        });
+    </script>
+@stop
