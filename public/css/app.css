@@ -33,13 +33,18 @@
 /* ----------------- 1. Base Styling ----------------- */
 
 @font-face {
-    font-family: cadosa;
-    src: url('{{ public_path('fonts/SFUFuturaBold.TFF') }}'), url('{{ public_path('fonts/SFUFuturaBoldOblique.TFF') }}'), url('{{ public_path('fonts/SFUFuturaBook.TFF') }}'), url('{{ public_path('fonts/SFUFuturaBookOblique.TFF') }}'), url('{{ public_path('fonts/SFUFuturaExtraBold.TFF') }}'), url('{{ public_path('fonts/SFUFuturaExtraBoldOblique.TFF') }}'), url('{{ public_path('fonts/SFUFuturaHeavy.TFF') }}'), url('{{ public_path('fonts/SFUFuturaHeavyOblique.TFF') }}'), url('{{ public_path('fonts/SFUFuturaLight.TFF') }}'), url('{{ public_path('fonts/SFUFuturaLightOblique.TFF') }}'), url('{{ public_path('fonts/SFUFuturaObliqueTTF.TFF') }}'), url('{{ public_path('fonts/SFUFuturaRegular.TFF') }}');
+    font-family: 'cadosa';
+    src: url('../fonts/SFUFuturaRegular.ttf');
 }
 
 @font-face {
-    font-family: UVNNhan;
-    src: url('{{ public_path('fonts/UVNNhan_B.TFF') }}'), url('{{ public_path('fonts/UVNNhan_BI.TFF') }}'), url('{{ public_path('fonts/UVNNhan_I.TFF') }}'), url('{{ public_path('fonts/UVNNhan_R.TFF') }}'), url('{{ public_path('fonts/UVNNhanNang_R.TFF') }}'), url('{{ public_path('fonts/UVNNhanNang_I.TFF') }}');
+    font-family: "uvnnhan";
+    src: url('../fonts/UVNNhan_R.ttf');
+}
+
+@font-face {
+    font-family: "uvnnhannang";
+    src: url('../fonts/UVNNhanNang_R.ttf');
 }
 
 * {
@@ -47,6 +52,10 @@
     border: 0;
     padding: 0;
     font-size: 100%;
+}
+
+body {
+    font-family: 'uvnnhannang';
 }
 
 h1, h2, h3, h4, h5, h6 {
