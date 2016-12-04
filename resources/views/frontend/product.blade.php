@@ -2,131 +2,16 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-7">
-            <div class="post medium-post technology">
-                <div class="post-cover">
-                    <a href="{{ route('detail-product') }}">
-                        <img src="{{ asset('image/articles/article_slide.jpg') }}" alt="featured post cover">
-                    </a>
-                </div>
-
-                <div class="post-body">
-                    <h4 class="post-title"><a href="{{ route('detail-product') }}">Những khoảnh khắc ấn tượng trong chuyến thăm Việt Nam của ông Modi</a></h4>
-                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="slider-homepage">
-                <div class="slide">
-                    <ul>
-                        <li>
-                            <img src="{{ asset('image/articles/title_1.jpg') }}">
-                        </li>
-                        <li>
-                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
-                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slide">
-                    <ul>
-                        <li>
-                            <img src="{{ asset('image/articles/title_1.jpg') }}">
-                        </li>
-                        <li>
-                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
-                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slide">
-                    <ul>
-                        <li>
-                            <img src="{{ asset('image/articles/title_1.jpg') }}">
-                        </li>
-                        <li>
-                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
-                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slide">
-                    <ul>
-                        <li>
-                            <img src="{{ asset('image/articles/title_1.jpg') }}">
-                        </li>
-                        <li>
-                            <h5 class="slider-title">Phí Phương Anh đoạt quán quân The Face 2016</h5>
-                            <p>Với phần ứng xử thông minh, cô gái 19 tuổi của đội Hồ Ngọc Hà vượt qua ba đối thủ để chiến thắng trong đêm chung kết tại TP HCM, ...</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-md-12">
+            <ul id="breadcrumb">
+                <li><a href="#">Trang chủ</a></li>
+                <li class="active"><a href="#">Sản phẩm</a></li>
+            </ul>
         </div>
     </div>
-    <hr>
     <div class="row">
         <div class="col-md-12">
-            <div class="nav-category">
-                <ul>
-                    <li><a href="">Tư vấn dinh dưỡng</a></li>
-                    <li><a href="">Thực đơn hôm nay</a></li>
-                    <li><a href="">Dược liệu tự nhiên</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-            <div class="post simple-post">
-                <div class="post-cover">
-                    <a href="{{ route('detail-product') }}">
-                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
-                    </a>
-                </div>
-
-                <div class="post-body">
-                    <h4 class="post-title"><a href="{{ route('detail-product') }}">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
-
-                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="post simple-post">
-                <div class="post-cover">
-                    <a href="{{ route('detail-product') }}">
-                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
-                    </a>
-                </div>
-
-                <div class="post-body">
-                    <h4 class="post-title"><a href="{{ route('detail-product') }}">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
-
-                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="post simple-post">
-                <div class="post-cover">
-                    <a href="{{ route('detail-product') }}">
-                        <img src="{{ asset('image/articles/simple-post-3.jpg') }}">
-                    </a>
-                </div>
-
-                <div class="post-body">
-                    <h4 class="post-title"><a href="{{ route('detail-product') }}">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a></h4>
-
-                    <p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="row mg-bot-10">
-        <div class="col-md-12">
-            <h3 class="title-ads-homepage align-center no-margin">click ngay để trải nghiệm dịch vụ miễn phí của Cadosa</h3>
+            <h3 class="title-ads-homepage align-center">click ngay để trải nghiệm dịch vụ miễn phí của Cadosa</h3>
         </div>
     </div>
     <div class="row">
@@ -175,6 +60,51 @@
             <div class="post simple-post">
                 <div class="post-cover">
                     <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
                         <img src="{{ asset('image/products/simple-post-2.jpg') }}">
                     </a>
                 </div>
@@ -296,6 +226,186 @@
                 <div class="post-cover">
                     <a href="{{ route('detail-product') }}">
                         <img src="{{ asset('image/products/simple-post-2.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-2.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-2.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-2.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
+                    </a>
+                </div>
+
+                <div class="post-body align-center">
+                    <h4 class="post-title no-margin"><a href="{{ route('detail-product') }}">Rau muống</a></h4>
+
+                    <p class="post-excerpt">Giá bán: <span class="price">20.000 đ/kg</span> - <i>Còn hàng</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post simple-post">
+                <div class="post-cover">
+                    <a href="{{ route('detail-product') }}">
+                        <img src="{{ asset('image/products/simple-post-1.jpg') }}">
                     </a>
                 </div>
 
@@ -330,6 +440,7 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="row">
         <div class="col-md-12">
             <div class="nav-category">
@@ -389,7 +500,9 @@
         <div class="col-md-12">
             <div class="nav-category">
                 <ul>
-                    <li><a href="">Hành trình của Cadosa</a></li>
+                    <li><a href="">Tư vấn dinh dưỡng</a></li>
+                    <li><a href="">Thực đơn hôm nay</a></li>
+                    <li><a href="">Dược liệu tự nhiên</a></li>
                 </ul>
             </div>
         </div>
@@ -439,56 +552,4 @@
             </div>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="slider-library-homepage">
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('image/upload/image_library.jpg') }}">
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
-
-@section('after-scripts')
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider-homepage').bxSlider({
-                mode: 'vertical',
-                minSlides: 3,
-                slideMargin: 15,
-                pager: false
-            });
-
-            $('.slider-library-homepage').bxSlider({
-                slideWidth: 220,
-                minSlides: 2,
-                maxSlides: 4,
-                slideMargin: 25,
-                pager: false
-            });
-        });
-    </script>
-@stop

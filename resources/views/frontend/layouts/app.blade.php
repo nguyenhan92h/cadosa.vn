@@ -61,7 +61,7 @@
                                     <ul class="clean-list">
                                         <li><a href="{{ route('home') }}">Trang chủ</a></li>
                                         <li><a href="{{ route('about') }}">Giới thiệu</a></li>
-                                        <li><a href="#">Sản phẩm</a></li>
+                                        <li><a href="{{ route('product') }}">Sản phẩm</a></li>
                                         <li><a href="#">Lịch nhập hàng</a></li>
                                         <li><a href="{{ route('technology') }}">Công nghệ</a></li>
                                         <li><a href="#">Liên hệ</a></li>

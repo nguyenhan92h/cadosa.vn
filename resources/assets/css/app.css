@@ -1215,6 +1215,7 @@ footer .copyrights a:hover {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .post .post-cover {
@@ -1634,8 +1635,12 @@ footer .copyrights a:hover {
     overflow: hidden;
 }
 
+.post.simple-post {
+    margin-bottom: 15px;
+}
+
 .post.simple-post .post-cover {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     overflow: hidden;
 }
 
@@ -1967,6 +1972,14 @@ ul.page-numbers li .page-numbers {
     color: #58585B;
 }
 
+ul.page-numbers li .page-numbers.all {
+    background-color: #99ca3c;
+    color: #fff;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
 ul.page-numbers li .page-numbers.current {
     padding: 6px;
 }
@@ -1987,7 +2000,7 @@ ul.page-numbers li .page-numbers.dots {
 }
 
 ul.page-numbers li .page-numbers.next, ul.page-numbers li .page-numbers.prev {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 ul.page-numbers li a {
@@ -2012,7 +2025,7 @@ ul.page-numbers li a:hover {
 }
 
 #page {
-    width: 992px;
+    width: 1024px;
     margin: 0 auto;
 }
 
@@ -2959,12 +2972,29 @@ ul.page-numbers li a:hover {
     float: right !important;
 }
 
+.mg-bot-10 {
+    margin-bottom: 10px !important;
+}
+
+.mg-bot-20 {
+    margin-bottom: 20px !important;
+}
+
 .clear-fix {
     clear: both;
 }
 
 .price {
     color: #ED1C24;
+}
+
+.price.small-price {
+    font-size: 14px;
+}
+
+.price.large-price {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .content-wrapper .slider-homepage li {
@@ -2979,6 +3009,7 @@ ul.page-numbers li a:hover {
 .content-wrapper .slider-homepage li .slider-title {
     text-transform: uppercase;
     color: #58585b;
+    font-weight: normal;
 }
 
 .content-wrapper .slider-homepage li p {
@@ -2993,11 +3024,12 @@ ul.page-numbers li a:hover {
 }
 
 .content-wrapper .nav-category {
-    margin: 18px 0;
+    margin: 0 auto;
 }
 
 .content-wrapper .nav-category li {
-    display: table-cell;
+    display: inline-block;
+    width: 24.6%;
 }
 
 .content-wrapper .nav-category li a {
@@ -3015,9 +3047,9 @@ ul.page-numbers li a:hover {
     background: #fff none repeat scroll 0 0;
     border-radius: 0 14px 14px 0;
     content: "";
-    padding: 18px 10px;
+    padding: 18px 7px;
     position: absolute;
-    right: -20px;
+    right: -14px;
     top: 0;
     z-index: 1;
 }
@@ -3083,4 +3115,40 @@ ul.page-numbers li a:hover {
 
 .content-wrapper .non-margin {
     margin: 0;
+}
+
+.post-title {
+    font-family: "uvnnhannang";
+    text-transform: uppercase;
+    color: #99CA3C;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.content-wrapper .info-product, .content-wrapper .info-detail-product {
+    font-family: "uvnnhan";
+    color: #404041;
+}
+
+.content-wrapper .info-product li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.content-wrapper .info-detail-product li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content-wrapper .info-detail-product li:first-child {
+    width: 80%;
+}
+
+.content-wrapper .info-detail-product .btn-buy-prod {
+    background-color: #99CA3C;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: "uvnnhannang";
+    padding: 20px 50px;
+    text-transform: uppercase;
 }
