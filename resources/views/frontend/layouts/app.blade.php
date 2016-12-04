@@ -63,7 +63,7 @@
                                         <li><a href="{{ route('about') }}">Giới thiệu</a></li>
                                         <li><a href="#">Sản phẩm</a></li>
                                         <li><a href="#">Lịch nhập hàng</a></li>
-                                        <li><a href="#">Công nghệ</a></li>
+                                        <li><a href="{{ route('technology') }}">Công nghệ</a></li>
                                         <li><a href="#">Liên hệ</a></li>
                                     </ul>
                                 </nav>

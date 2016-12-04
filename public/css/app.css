@@ -157,6 +157,7 @@ p {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -3043,6 +3044,7 @@ ul.page-numbers li a:hover {
     border: 1px solid #58585B;
     border-radius: 8px;
     padding: 15px 20px;
+    margin-top: 20px;
 }
 
 .content-wrapper .box-help .title {
@@ -3064,6 +3066,23 @@ ul.page-numbers li a:hover {
     color: #6D6E70;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.content-wrapper .post-interest {
+    margin-top: 25px;
+}
+
+.content-wrapper .post-interest a {
+    color: #F7931D;
+}
+
+.content-wrapper .post-interest ul li:before {
+    content: "-";
+    padding-right: 8px;
+}
+
+.content-wrapper .non-margin {
+    margin: 0;
 }
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider

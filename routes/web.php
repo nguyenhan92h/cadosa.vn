@@ -13,8 +13,12 @@
 
 Route::get('/', function () {
     return view('frontend.index');
-})->name('home');;
+})->name('home');
 
 Route::get('/gioi-thieu', function () {
     return view('frontend.about');
-})->name('about');;
+})->name('about');
+
+Route::get('/cong-nghe', function () {
+    return view('frontend.technology');
+})->name('technology');
