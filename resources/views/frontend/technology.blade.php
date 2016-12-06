@@ -3,7 +3,7 @@
 @section('content')
 	<hr>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 post-bottom-20">
             <ul id="breadcrumb-technology" class="list-inline">
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li class="active"><a href="{{ route('technology') }}">Công nghệ</a></li>
@@ -19,7 +19,7 @@
 		<div class="col-md-12">
 			<div class="post simple-post">
 				<div class="post-title">
-	    			<h3>GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h3>
+	    			<h3><a href="{{ route('detail-technology') }}" style="font-size: 23px;">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h3>
 	    		</div>
     		</div>
 		</div>
@@ -39,7 +39,7 @@
 	    		<p class="post-excerpt no-margin">Nhà máy Đóng tàu Ba Son</p>
 	    		<br>
 	    		<p class="post-excerpt">Được người Pháp quyết định xây dựng từ năm 1863, sau khi xâm lược Việt Nam giữa thế kỷ XIX, Ba Son ban đầu là một xưởng sửa chữa, trú đậu cho chiến thuyền của quân đội thực dân và thương thuyền thời đó. Đến cuối thế kỷ này, Nhà máy Ba Son (Nay thuộc số 2 Tôn Đức Thắng, quận 1 TP HCM) được mở rộng thành một công trường lớn nhất Sài Gòn xưa. Đây là nơi sản xuất, sửa chữa mọi loại tàu thuyền, nơi đặt lò đúc của các hạng súng lớn nhỏ bằng đồng hay bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau.......</p>
-	    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+	    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
 			</div>
     	</div>
     </div>
@@ -56,7 +56,7 @@
 				<div class="post-body">
 					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
 		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
 		    	</div>
     		</div>
     	</div>
@@ -71,40 +71,7 @@
 				<div class="post-body">
 					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
 		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
-		    	</div>
-    		</div>
-    	</div>
-    </div>
-    <hr>
-    <div class="row">
-    	<div class="col-md-6">
-    		<div class="post simple-post">
-    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
-				<div class="post-cover">
-					<a href="page-single-story.html">
-						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
-					</a>
-				</div>
-				<div class="post-body">
-					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
-		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
-		    	</div>
-    		</div>
-    	</div>
-    	<div class="col-md-6">
-    		<div class="post simple-post">
-    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
-				<div class="post-cover">
-					<a href="page-single-story.html">
-						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
-					</a>
-				</div>
-				<div class="post-body">
-					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
-		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
 		    	</div>
     		</div>
     	</div>
@@ -122,7 +89,7 @@
 				<div class="post-body">
 					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
 		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
 		    	</div>
     		</div>
     	</div>
@@ -137,7 +104,40 @@
 				<div class="post-body">
 					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
 		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
+		    	</div>
+    		</div>
+    	</div>
+    </div>
+    <hr>
+    <div class="row">
+    	<div class="col-md-6">
+    		<div class="post simple-post">
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
+				<div class="post-cover">
+					<a href="page-single-story.html">
+						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
+					</a>
+				</div>
+				<div class="post-body">
+					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
+		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
+		    	</div>
+    		</div>
+    	</div>
+    	<div class="col-md-6">
+    		<div class="post simple-post">
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
+				<div class="post-cover">
+					<a href="page-single-story.html">
+						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
+					</a>
+				</div>
+				<div class="post-body">
+					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
+		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
+		    		<p class="post-excerpt text-right"><a href="{{ route('detail-technology') }}">Xem tiếp...</a></p>
 		    	</div>
     		</div>
     	</div>

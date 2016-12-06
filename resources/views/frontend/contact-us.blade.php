@@ -3,7 +3,7 @@
 @section('content')
 	<hr>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 post-bottom-20">
             <ul id="breadcrumb-technology" class="list-inline">
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li class="active"><a href="{{ route('contact-us') }}">Liên hệ</a></li>
@@ -18,7 +18,7 @@
     <div class="row">
     	<form action="#" method="POST">
 			<div class="col-md-7">
-				<label class="post-title" style="font-size: 14px; left: 190px; position: absolute; top: 5px;">Vui Lòng Điền Thông Tin</label>
+				<label class="post-title" style="font-size: 14px; left: 190px; position: absolute; top: 5px; background-color: #FFF;">Vui Lòng Điền Thông Tin</label>
 				<div class="border-radius box-help post-bottom-20">
 					<div class="form-horizontal">
 						<div class="form-group">

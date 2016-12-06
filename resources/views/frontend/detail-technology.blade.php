@@ -3,7 +3,7 @@
 @section('content')
 	<hr>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 post-bottom-20">
             <ul id="breadcrumb-technology" class="list-inline">
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li class="active"><a href="{{ route('technology') }}">Công nghệ</a></li>
