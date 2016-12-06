@@ -1030,7 +1030,7 @@ header .main-header-wrapper .main-nav ul {
 header .main-header-wrapper .main-nav ul li {
     text-transform: uppercase;
     display: inline-block;
-    margin: 0 35px 0 0;
+    margin: 0 50px 0 0;
     font-size: 18px;
     color: #58585B;
     font-family: "uvnnhannang";
@@ -1056,7 +1056,7 @@ header .main-header-wrapper .main-nav ul li a:hover {
 @media (max-width: 1400px) {
     header .main-header-wrapper .main-nav ul li {
         font-size: 16px;
-        margin: 0 50px 0 0;
+        margin: 0 45px 0 0;
     }
     header .main-header-wrapper .main-nav ul li:last-of-type {
         margin: 0;
@@ -3113,16 +3113,16 @@ ul.page-numbers li a:hover {
     padding-right: 8px;
 }
 
-.content-wrapper .non-margin {
-    margin: 0;
-}
-
 .post-title {
     font-family: "uvnnhannang";
     text-transform: uppercase;
     color: #99CA3C;
     font-size: 23px;
     font-weight: normal;
+}
+
+.post-bottom-20 {
+    margin-bottom: 20px!important;
 }
 
 .content-wrapper .info-product, .content-wrapper .info-detail-product {

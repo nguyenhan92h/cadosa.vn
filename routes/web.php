@@ -19,7 +19,6 @@ Route::get('/gioi-thieu', function () {
     return view('frontend.about');
 })->name('about');
 
-
 Route::get('/cong-nghe', function () {
     return view('frontend.technology');
 })->name('technology');
@@ -35,4 +34,12 @@ Route::get('/chi-tiet-san-pham', function () {
 Route::get('/huong-dan-mua-hang', function () {
     return view('frontend.buy-guide');
 })->name('buy-guide');
+
+Route::get('/dang-ky', function () {
+    return view('frontend.contact-us');
+})->name('contact-us');
+
+Route::get('/chi-tiet-cong-nghe', function () {
+    return view('frontend.detail-technology');
+})->name('detail-technology');
 

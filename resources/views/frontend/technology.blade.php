@@ -34,9 +34,9 @@
     	</div>
     	<div class="col-md-6">
 	    	<div class="post simple-post">
-	    		<p class="post-excerpt non-margin">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
-	    		<p class="post-excerpt non-margin">Huyền thoại nhà máy Dệt 'cứ trả lương là cả thành phố chao đảo'</p>
-	    		<p class="post-excerpt non-margin">Nhà máy Đóng tàu Ba Son</p>
+	    		<p class="post-excerpt no-margin">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
+	    		<p class="post-excerpt no-margin">Huyền thoại nhà máy Dệt 'cứ trả lương là cả thành phố chao đảo'</p>
+	    		<p class="post-excerpt no-margin">Nhà máy Đóng tàu Ba Son</p>
 	    		<br>
 	    		<p class="post-excerpt">Được người Pháp quyết định xây dựng từ năm 1863, sau khi xâm lược Việt Nam giữa thế kỷ XIX, Ba Son ban đầu là một xưởng sửa chữa, trú đậu cho chiến thuyền của quân đội thực dân và thương thuyền thời đó. Đến cuối thế kỷ này, Nhà máy Ba Son (Nay thuộc số 2 Tôn Đức Thắng, quận 1 TP HCM) được mở rộng thành một công trường lớn nhất Sài Gòn xưa. Đây là nơi sản xuất, sửa chữa mọi loại tàu thuyền, nơi đặt lò đúc của các hạng súng lớn nhỏ bằng đồng hay bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau.......</p>
 	    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
@@ -47,7 +47,7 @@
     <div class="row">
     	<div class="col-md-6">
     		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
 				<div class="post-cover">
 					<a href="page-single-story.html">
 						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
@@ -62,40 +62,7 @@
     	</div>
     	<div class="col-md-6">
     		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
-				<div class="post-cover">
-					<a href="page-single-story.html">
-						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
-					</a>
-				</div>
-				<div class="post-body">
-					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
-		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
-		    	</div>
-    		</div>
-    	</div>
-    </div>
-    <hr>
-    <div class="row">
-    	<div class="col-md-6">
-    		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
-				<div class="post-cover">
-					<a href="page-single-story.html">
-						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
-					</a>
-				</div>
-				<div class="post-body">
-					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
-		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
-		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
-		    	</div>
-    		</div>
-    	</div>
-    	<div class="col-md-6">
-    		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
 				<div class="post-cover">
 					<a href="page-single-story.html">
 						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
@@ -113,7 +80,7 @@
     <div class="row">
     	<div class="col-md-6">
     		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
 				<div class="post-cover">
 					<a href="page-single-story.html">
 						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
@@ -128,7 +95,40 @@
     	</div>
     	<div class="col-md-6">
     		<div class="post simple-post">
-    			<h4 class="post-title">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</h4>
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
+				<div class="post-cover">
+					<a href="page-single-story.html">
+						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
+					</a>
+				</div>
+				<div class="post-body">
+					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
+		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
+		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    	</div>
+    		</div>
+    	</div>
+    </div>
+    <hr>
+    <div class="row">
+    	<div class="col-md-6">
+    		<div class="post simple-post">
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
+				<div class="post-cover">
+					<a href="page-single-story.html">
+						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
+					</a>
+				</div>
+				<div class="post-body">
+					<p class="post-excerpt">Tồn tại vắt qua 3 thế kỷ, những cái tên như Đóng tàu Ba Son, Xi măng Hải Phòng, Dệt Nam Định... đã đi vào ký ức của nhiều thế hệ người Việt, song hầu hết đã đc chuyển đổi trong những năm gần đây.</p>
+		    		<p class="post-excerpt">Nhà máy Đóng tàu Ba Son bằng gang, tập chung hàng nghìn công nhân với nhiều ngành chuyên môn khác nhau........</p>
+		    		<p class="post-excerpt text-right"><a href="#">Xem tiếp...</a></p>
+		    	</div>
+    		</div>
+    	</div>
+    	<div class="col-md-6">
+    		<div class="post simple-post">
+    			<h6 class="post-title"><a href="{{ route('detail-technology') }}">GIÁO SƯ TỪ BỎ THÀNH PHỐ VỀ TRỒNG RỪNG</a></h6>
 				<div class="post-cover">
 					<a href="page-single-story.html">
 						<img src="http://cadosa.dev/image/articles/simple-post-4.jpg">
@@ -145,7 +145,7 @@
     <div class="row">
 		<div class="col-md-12">
 			<div class="simple-post box-help">
-				<h4 class="align-center title">Hướng dẫn mua hàng</h4>
+				<h6 class="align-center title">Hướng dẫn mua hàng</h6>
 				<div class="post-body">
 					<p>- Hàng ngày lúc 7h đến 8h sáng về: Lợn sạch, Lợn mán Hòa Bình | Thịt gà, vịt sạch Hòa Bình | Rau hữu cơ, rau bản địa Dì Thàng, Lào Cai | Rau quả VietGAP | Các loại hoa quả Việt Nam | Hoa quả nhập khẩu.</p>
 					<p>- 12h hàng ngày sẽ về : Cá hồi tươi được nhập khẩu từ NAUY và Sói Biển chỉ bán loại 1 có trọng lượng 6 kg trở lên.</p>
@@ -159,9 +159,9 @@
 		<div class="col-md-12">
 			<div class="post simple-post post-interest">
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">Có thể bạn quan tâm</a>
-					</h4>
+					</h6>
 					<ul class="list-unstyled">
 						<li>Những 'tay chơi' mới trên thị trường bất động sản (11/7)</li>
 						<li>Những việc nên làm ngay khi mất việc (30/5) 74</li>
@@ -175,7 +175,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category">
+			<div class="nav-category bottom-20">
 				<ul>
 					<li>
 						<a href="">Công nghệ sản xuất</a>
@@ -191,9 +191,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
@@ -206,9 +206,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
@@ -221,9 +221,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
@@ -232,7 +232,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category">
+			<div class="nav-category bottom-20">
 				<ul>
 					<li>
 						<a href="">Tư vấn dinh dưỡng</a>
@@ -254,9 +254,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
@@ -269,9 +269,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
@@ -284,9 +284,9 @@
 					</a>
 				</div>
 				<div class="post-body">
-					<h4 class="post-title">
+					<h6 class="post-title">
 						<a href="page-single-story.html">15 CÁCH GIẢM BÉO ĐƠN GIẢN KO ẢNH HƯỞNG SỨC KHỎE</a>
-					</h4>
+					</h6>
 					<p class="post-excerpt">Thủ tướng Ấn Độ Narendra Modi bắt đầu chuyến thăm chính thức đầu tiên tới Việt Nam sáng nay, đánh dấu một bước tiến mới trong quan hệ hai nước.</p>
 				</div>
 			</div>
