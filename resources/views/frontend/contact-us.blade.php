@@ -3,8 +3,9 @@
 @section('content')
 	<hr>
     <div class="row">
-        <div class="col-md-12 post-bottom-20">
+        <div class="col-md-12 mg-bot-20">
             <ul id="breadcrumb-technology" class="list-inline">
+                <li><img src="http://cadosa.dev/image/background_menu.png"></li>
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li class="active"><a href="{{ route('contact-us') }}">Liên hệ</a></li>
             </ul>
@@ -12,17 +13,17 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-        	<h5 class="post-title" style="color: #58585b;">Đăng ký trải nghiệm và liên hệ cadosa</h5>
+        	<h5 class="post-title color-title">Đăng ký trải nghiệm và liên hệ cadosa</h5>
         </div>
     </div>
     <div class="row">
     	<form action="#" method="POST">
 			<div class="col-md-7">
-				<label class="post-title" style="font-size: 14px; left: 190px; position: absolute; top: 5px; background-color: #FFF;">Vui Lòng Điền Thông Tin</label>
-				<div class="border-radius box-help post-bottom-20">
+				<label class="post-title color-green" style="font-size: 14px; left: 190px; position: absolute; top: 5px; background-color: #FFF;">Vui Lòng Điền Thông Tin</label>
+				<div class="border-radius box-help border-contact-us mg-bot-20">
 					<div class="form-horizontal">
 						<div class="form-group">
-					    	<label for="full_name" class="col-sm-3 control-label" style="font-weight: normal;font-size: 11px">HỌ VÀ TÊN:</label>
+					    	<label for="full_name" class="col-sm-3 control-label input-contact-us">HỌ VÀ TÊN:</label>
 				    		<div class="col-sm-9">
 					      		<input id="full_name" name="full_name" type="text" class="form-control" id="inputEmail3" placeholder="">
 					    	</div>
@@ -30,7 +31,7 @@
 					</div>
 					<div class="form-horizontal">
 						<div class="form-group">
-					    	<label for="address" class="col-sm-3 control-label" style="font-weight: normal;font-size: 11px">ĐỊA CHỈ:</label>
+					    	<label for="address" class="col-sm-3 control-label input-contact-us">ĐỊA CHỈ:</label>
 				    		<div class="col-sm-9">
 					      		<input id="address" name="address" type="text" class="form-control" id="inputEmail3" placeholder="">
 					    	</div>
@@ -38,7 +39,7 @@
 					</div>
 					<div class="form-horizontal">
 						<div class="form-group">
-					    	<label for="phone_number" class="col-sm-3 control-label" style="font-weight: normal;font-size: 11px">SỐ ĐIỆN THOẠI:</label>
+					    	<label for="phone_number" class="col-sm-3 control-label input-contact-us">SỐ ĐIỆN THOẠI:</label>
 				    		<div class="col-sm-9">
 					      		<input id="phone_number" name="phone_number" type="text" class="form-control" id="inputEmail3" placeholder="">
 					    	</div>
@@ -46,7 +47,7 @@
 					</div>
 					<div class="form-horizontal">
 						<div class="form-group">
-					    	<label for="email" class="col-sm-3 control-label" style="font-weight: normal;font-size: 11px">EMAIL:</label>
+					    	<label for="email" class="col-sm-3 control-label input-contact-us">EMAIL:</label>
 				    		<div class="col-sm-9">
 					      		<input id="email" name="email" type="email" class="form-control" id="inputEmail3" placeholder="">
 					    	</div>
@@ -54,7 +55,7 @@
 					</div>
 					<div class="form-horizontal">
 						<div class="form-group">
-					    	<label for="content" class="col-sm-3 control-label" style="font-weight: normal;font-size: 11px">NỘI DUNG YÊU CẦU:</label>
+					    	<label for="content" class="col-sm-3 control-label input-contact-us">NỘI DUNG YÊU CẦU:</label>
 				    		<div class="col-sm-9">
 					      		<textarea id="content" name="content" class="form-control" rows="4"></textarea>
 					    	</div>
@@ -64,22 +65,22 @@
 			</div>
 			<div class="col-md-5">
 				<div class="post simple-post form-horizontal" style="padding: 15px 0 0 15px;">
-					<div class="checkbox post-title form-group" style="font-size: 15px; color: #f7931d;">
+					<div class="checkbox post-title form-group font-15 color-orange">
 					    <label>
 					      	<input type="checkbox">Đăng ký tư vấn sức khỏe qua email của cadosa
 					    </label>
 				  	</div>
-				  	<div class="checkbox post-title form-group post-bottom-20" style="font-size: 15px;">
+				  	<div class="checkbox post-title form-group mg-bot-20 font-15 color-green">
 					    <label>
 					      	<input type="checkbox">Đăng ký nhận tư vấn dinh dưỡng qua email của cadosa
 					    </label>
 				  	</div>
 				  	<div class="text-center form-group">
-				  		<button class="btn btn-success col-sm-3 col-sm-offset-2" style="background-color: #99ca3c; border: 1px solid #99ca3c;">Gửi</button>
-				  		<button class="btn btn-success col-sm-3 col-sm-offset-1" style="background-color: #99ca3c; border: 1px solid #99ca3c;">Xóa Hết</button>
+				  		<button class="btn btn-success background-green col-sm-3 col-sm-offset-2" style="border: 1px solid #99CA3C;">Gửi</button>
+				  		<button class="btn btn-success background-green col-sm-3 col-sm-offset-1" style="border: 1px solid #99CA3C;">Xóa Hết</button>
 				  	</div>
 				  	<div class="form-group">
-					    <label class="post-title col-sm-offset-2" style="font-size: 15px;">Hotline hỗ trợ: 09333 56786</label>
+					    <label class="post-title col-sm-offset-2 font-15 color-green">Hotline hỗ trợ: 09333 56786</label>
 				  	</div>
 			  	</div>
 			</div>
@@ -87,7 +88,7 @@
     </div>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category post-bottom-20">
+			<div class="nav-category mg-bot-20">
 				<ul>
 					<li>
 						<a href="">Công nghệ sản xuất</a>
@@ -144,7 +145,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category post-bottom-20">
+			<div class="nav-category mg-bot-20">
 				<ul>
 					<li>
 						<a href="">Tư vấn dinh dưỡng</a>

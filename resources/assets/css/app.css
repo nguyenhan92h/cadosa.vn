@@ -2961,6 +2961,27 @@ ul.page-numbers li a:hover {
     border-left-color: #00A79D;
 }
 
+#breadcrumb-technology li, #breadcrumb-technology li a{
+    color: #99CA3C;
+    vertical-align: middle;
+}
+
+#breadcrumb-technology li:first-child{
+    width: 5%;
+}
+
+#breadcrumb-technology li:first-child:after{
+    content: none;
+}
+
+#breadcrumb-technology li:after{
+    content: "»";
+    padding-left: 10px;
+}
+
+#breadcrumb-technology li:last-child:after{
+    content: none;
+}
 
 /* ----------CSS custom------------ */
 
@@ -2982,6 +3003,42 @@ ul.page-numbers li a:hover {
 
 .clear-fix {
     clear: both;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.color-title {
+    color: #58585b !important;
+}
+
+.color-orange {
+    color: #f7931d !important;
+}
+
+.color-green {
+    color: #99CA3C !important;
+}
+
+.background-orange {
+    background-color: #f7931d !important;
+}
+
+.background-green {
+    background-color: #99CA3C !important;
 }
 
 .price {
@@ -3116,13 +3173,8 @@ ul.page-numbers li a:hover {
 .post-title {
     font-family: "uvnnhannang";
     text-transform: uppercase;
-    color: #99CA3C;
     font-size: 23px;
     font-weight: normal;
-}
-
-.post-bottom-20 {
-    margin-bottom: 20px!important;
 }
 
 .content-wrapper .info-product, .content-wrapper .info-detail-product {
@@ -3151,4 +3203,13 @@ ul.page-numbers li a:hover {
     font-family: "uvnnhannang";
     padding: 20px 50px;
     text-transform: uppercase;
+}
+
+.content-wrapper .border-contact-us {
+    border: 1px solid #ccc;
+}
+
+.content-wrapper .input-contact-us {
+    font-weight: normal;
+    font-size: 11px;
 }

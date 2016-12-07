@@ -3,8 +3,9 @@
 @section('content')
 	<hr>
     <div class="row">
-        <div class="col-md-12 post-bottom-20">
+        <div class="col-md-12 mg-bot-20">
             <ul id="breadcrumb-technology" class="list-inline">
+                <li><img src="http://cadosa.dev/image/background_menu.png"></li>
                 <li><a href="{{ route('home') }}">Trang chủ</a></li>
                 <li class="active"><a href="{{ route('technology') }}">Công nghệ</a></li>
             </ul>
@@ -175,7 +176,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category bottom-20">
+			<div class="nav-category mg-bot-20">
 				<ul>
 					<li>
 						<a href="">Công nghệ sản xuất</a>
@@ -232,7 +233,7 @@
 	<hr>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="nav-category bottom-20">
+			<div class="nav-category mg-bot-20">
 				<ul>
 					<li>
 						<a href="">Tư vấn dinh dưỡng</a>
