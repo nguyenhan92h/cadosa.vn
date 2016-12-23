@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'vn',
 
     /*
     |--------------------------------------------------------------------------
@@ -188,6 +188,7 @@ return [
         Backpack\PageManager\PageManagerServiceProvider::class,
         Backpack\MenuCRUD\MenuCRUDServiceProvider::class,
         Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
+        Backpack\ProductCRUD\ProductCRUDServiceProvider::class,
 
     ],
 

@@ -46,12 +46,21 @@
                     </span>
                 </a>
             </li>
+            <li>
+                <a href="{{ url('admin/category') }}">
+                    <i class="fa fa-list-alt">
+                    </i>
+                    <span>
+                        Thể loại
+                    </span>
+                </a>
+            </li>
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-newspaper-o">
                     </i>
                     <span>
-                        News
+                        Tin tức
                     </span>
                     <i class="fa fa-angle-left pull-right">
                     </i>
@@ -62,16 +71,7 @@
                             <i class="fa fa-newspaper-o">
                             </i>
                             <span>
-                                Articles
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('admin/category') }}">
-                            <i class="fa fa-list">
-                            </i>
-                            <span>
-                                Categories
+                                Bài viết
                             </span>
                         </a>
                     </li>
@@ -87,6 +87,15 @@
                 </ul>
             </li>
             <li>
+                <a href="{{ url('admin/product') }}">
+                    <i class="fa fa-pencil-square">
+                    </i>
+                    <span>
+                        Sản phẩm
+                    </span>
+                </a>
+            </li>
+            {{-- <li>
                 <a href="{{ url('admin/page') }}">
                     <i class="fa fa-file-o">
                     </i>
@@ -94,7 +103,7 @@
                         Pages
                     </span>
                 </a>
-            </li>
+            </li> --}}
             <li>
                 <a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/setting') }}">
                     <i class="fa fa-cog">

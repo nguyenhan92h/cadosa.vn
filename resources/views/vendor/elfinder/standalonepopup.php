@@ -21,7 +21,7 @@
     ?>
         <!-- elFinder translation (OPTIONAL) -->
         <script src="<?= asset($dir."/js/i18n/elfinder.$locale.js") ?>"></script>
-    <?php 
+    <?php
 } ?>
     <!-- Include jQuery, jQuery UI, elFinder (REQUIRED) -->
 
@@ -32,7 +32,7 @@
                 <?php if ($locale) {
     ?>
                     lang: '<?= $locale ?>', // locale
-                <?php 
+                <?php
 } ?>
                 customData: {
                     _token: '<?= csrf_token() ?>'
@@ -42,11 +42,13 @@
                 resizable: false,
                 commandsOptions: {
                     getfile: {
-                        oncomplete: 'destroy'
+                        oncomplete: 'destroy',
+                         multiple: true,
                     }
                 },
                 getFileCallback: function (file) {
-                    window.parent.processSelectedFile(file.path, '<?= $input_id?>');
+                    var urls = $.map(file, function(f) { return f.path; });
+                    window.parent.processSelectedFile(urls, '<?= $input_id?>');
                     parent.jQuery.colorbox.close();
                 }
             }).elfinder('instance');

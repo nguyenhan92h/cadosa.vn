@@ -110,7 +110,7 @@
                         </div>
                     </li>
                     <li class="align-right">
-                        <button class="btn-buy-prod">Mua hàng</button>
+                        <a href="{{ route('buy-guide') }}" class="btn-buy-prod">Mua hàng</a>
                     </li>
                 </ul>
             </div>
