@@ -30,7 +30,9 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Backpack\\ProductCRUD\\": "vendor/backpack/productcrud/src"
+            "Backpack\\ProductCRUD\\": "vendor/backpack/productcrud/src",
+            "Backpack\\ContactCRUD\\": "vendor/backpack/contactcrud/src"
+            // "Backpack\\BannerCRUD\\": "vendor/backpack/bannercrud/src"
         }
     },
     "autoload-dev": {

@@ -189,6 +189,8 @@ return [
         Backpack\MenuCRUD\MenuCRUDServiceProvider::class,
         Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
         Backpack\ProductCRUD\ProductCRUDServiceProvider::class,
+        Backpack\ContactCRUD\ContactCRUDServiceProvider::class,
+        // Backpack\BannerCRUD\BannerCRUDServiceProvider::class,
 
     ],
 
