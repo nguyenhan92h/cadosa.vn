@@ -95,6 +95,22 @@
                     </span>
                 </a>
             </li>
+            <li>
+                <a href="{{ url('admin/contact') }}">
+                    <i class="fa fa-users"></i>
+                    <span>
+                        Contact
+                    </span>
+                </a>
+            </li>
+            {{-- <li>
+                <a href="{{ url('admin/banner') }}">
+                    <i class="fa fa-image"></i>
+                    <span>
+                        Banner
+                    </span>
+                </a>
+            </li> --}}
             {{-- <li>
                 <a href="{{ url('admin/page') }}">
                     <i class="fa fa-file-o">
